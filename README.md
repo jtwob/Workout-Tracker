@@ -12,13 +12,13 @@ This app is designed to track a series of workouts, their durations, date of com
 
 ## Technologies:
 
--mongoDB
--node
--express
--mongoose
--css, js
--heroku
--MongoDB Atlas
+- mongoDB
+- node
+- express
+- mongoose
+- css, js
+- heroku
+- MongoDB Atlas
 
 ## Contributors:
 
