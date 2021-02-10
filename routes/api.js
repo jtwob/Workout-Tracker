@@ -26,7 +26,7 @@ router.put("/api/workouts/:id", (req, res) => {
     },
     {
       // $set: {
-      //   totalDuration: req.body.duration,
+      //   totalDuration: typeof totalDuration === Number ? totalDuration + req.body.duration : req.body.duration,
       // },
       $push: {
         exercises: req.body,
