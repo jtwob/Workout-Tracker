@@ -25,9 +25,9 @@ router.put("/api/workouts/:id", (req, res) => {
       _id: mongojs.ObjectId(req.params.id),
     },
     {
-      $set: {
-        totalDuration: req.body.duration,
-      },
+      // $set: {
+      //   totalDuration: req.body.duration,
+      // },
       $push: {
         exercises: req.body,
       },
@@ -36,7 +36,7 @@ router.put("/api/workouts/:id", (req, res) => {
       if (err) {
         res.send(err);
       } else {
-        res.send(data);
+        res.send({ ...data });
       }
     }
   );
